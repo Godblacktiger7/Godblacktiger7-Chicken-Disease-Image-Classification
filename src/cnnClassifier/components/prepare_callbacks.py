@@ -1,9 +1,10 @@
+
 import os
 import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 import time
-from cnnClassifier.entity.config_entity import PrepareCallbacksConfig 
+from cnnClassifier.entity.config_entity import PrepareCallbacksConfig
 
 
 class PrepareCallback:
@@ -11,7 +12,6 @@ class PrepareCallback:
         self.config = config
 
 
-        
     
     @property
     def _create_tb_callbacks(self):

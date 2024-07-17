@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://storage.googleapis.com/kaggle-data-sets/2051125/3402697/bundle/archive.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240711%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240711T110611Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=21396fee8bb429cce1383d0633664690bbde1b68c8d55965bff90550be87a824d179d1b47208ce3d06d4d5f8952b276a16572839d38086a2235d36af2b0ede3c6b2373a845475c899dd841a90a4f812c5ade8e16032fc3b8eadb3259cba8e6ee25a6393293572310f05ba530234edd2811171181102ce415f7f48d1ff91dea6c2ca1dae8bcbe725ba4e0cf949b8a5299d397cf3492a04884d0859c49f14010730e381a81ddf12eb23d90101f7fcca19378a2e07872c4a21788249774f86e71c8668d03653d7c37847be8e7e5d288557f18c5d8e84519ca6729f7b1ce4ab3bc4cfcb2836dff6a1b9a4c4706e96af5c47139b9636c298b41e98b7be249fdbe9c42
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/Chicken-fecal-images.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
@@ -15,3 +15,7 @@ prepare_callbacks:
   root_dir: artifacts/prepare_callbacks
   tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir
   checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5
